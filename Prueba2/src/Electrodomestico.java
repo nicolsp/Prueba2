@@ -95,7 +95,7 @@ public class Electrodomestico {
 			valorextra += 10;
 
 		}
-		return valorextra;
+		return precioBase+valorextra;
 	}
 
 

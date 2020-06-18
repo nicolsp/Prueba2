@@ -16,27 +16,28 @@ public class Ejecutable {
         listaElectrodomesticos[8]=new Electrodomestico();
         listaElectrodomesticos[9]=new Lavadora(100, 40, 'Z', "blanco", 40);
 		
-        double sumaElectrodomesticos=0;
-        double sumaTelevisiones=0;
-        double sumaLavadoras=0;
+        double totalLavadoras=0;
+        double totalElectrodomesticos=0;
+        double totalTelevisiones=0;
+        
         
         for(int i=0;i<listaElectrodomesticos.length;i++){
         	
         	if(listaElectrodomesticos[i] instanceof Electrodomestico){
-                sumaElectrodomesticos+=listaElectrodomesticos[i].precioFinal();
+                totalElectrodomesticos+=listaElectrodomesticos[i].precioFinal();
             }
             if(listaElectrodomesticos[i] instanceof Lavadora){
-                sumaLavadoras+=listaElectrodomesticos[i].precioFinal();
+                totalLavadoras+=listaElectrodomesticos[i].precioFinal();
             }
             if(listaElectrodomesticos[i] instanceof Television){
-                sumaTelevisiones+=listaElectrodomesticos[i].precioFinal();
+                totalTelevisiones+=listaElectrodomesticos[i].precioFinal();
             }
         }
    
   
-        System.out.println("La suma del precio de los electrodomesticos es de "+sumaElectrodomesticos);
-        System.out.println("La suma del precio de las lavadoras es de "+sumaLavadoras);
-        System.out.println("La suma del precio de las televisiones es de "+sumaTelevisiones);
+        System.out.println("La suma del precio de los electrodomesticos es de "+totalElectrodomesticos);
+        System.out.println("La suma del precio de las lavadoras es de "+totalLavadoras);
+        System.out.println("La suma del precio de las televisiones es de "+totalTelevisiones);
    
     
 		

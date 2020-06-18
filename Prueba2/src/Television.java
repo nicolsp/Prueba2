@@ -11,7 +11,6 @@ public class Television extends Electrodomestico{
        
         double valorextra=super.precioFinal();
   
-      // tengo error
         if (resolucion>40){
             valorextra+= getPrecioBase()*0.3;
         }

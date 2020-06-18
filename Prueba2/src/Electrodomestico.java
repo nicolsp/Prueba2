@@ -65,22 +65,22 @@ public class Electrodomestico {
         double valorextra=0;
         switch(consumoEnergetico){
             case 'A':
-            	valorextra+=100;
+            	valorextra+=100000;
                 break;
             case 'B':
-            	valorextra+=80;
+            	valorextra+=80000;
                 break;
             case 'C':
-            	valorextra+=60;
+            	valorextra+=60000;
                 break;
             case 'D':
-            	valorextra+=50;
+            	valorextra+=50000;
                 break;
             case 'E':
-            	valorextra+=30;
+            	valorextra+=30000;
                 break;
             case 'F':
-            	valorextra+=10;
+            	valorextra+=10000;
                 break;
         }
    

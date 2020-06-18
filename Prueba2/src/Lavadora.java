@@ -12,7 +12,7 @@ public class Lavadora extends Electrodomestico {
 		 double valorextra=super.precioFinal();
 
 		 if (carga>30){
-	            valorextra+=50;
+	            valorextra+=50000;
 	        }
 	  
 	        return valorextra;

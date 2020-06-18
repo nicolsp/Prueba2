@@ -86,13 +86,13 @@ public class Electrodomestico {
    
 
 		if (peso > 80) {
-			valorextra += 100;
+			valorextra += 100000;
 		} else if (peso > 50) {
-			valorextra += 80;
+			valorextra += 80000;
 		} else if (peso > 20) {
-			valorextra += 50;
+			valorextra += 50000;
 		} else {
-			valorextra += 10;
+			valorextra += 10000;
 
 		}
 		return precioBase+valorextra;
